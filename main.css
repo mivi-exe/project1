@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cinzel+Decorative:wght@400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;1,6..12,400&display=swap');
+
+:root {
+    --sectionbg: rgba(54, 0, 105, 0.199);
+}
+
+html {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito Sans';
+    background-color: rgb(207, 197, 233);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(8px);
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.labs {
+    background-color: var(--sectionbg);
+    padding: 2%;
+    margin: 2%;
+}
+
+.projects {
+    background-color: var(--sectionbg);
+    padding: 2%;
+    margin: 2%;
+}
