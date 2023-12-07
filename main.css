@@ -1,20 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cinzel+Decorative:wght@400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;1,6..12,400&display=swap');
 
 :root {
-    --sectionbg: rgba(54, 0, 105, 0.199);
+    --sectionbg: rgba(241, 226, 255, 0.829);
+}
+
+* {
+    padding: 0;
+    margin: 0;
 }
 
 html {
     width: 100%;
-    padding: 0;
-    margin: 0;
     font-family: 'Nunito Sans';
     background-color: rgb(207, 197, 233);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: right;
     background-size: cover;
-    backdrop-filter: blur(8px);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/sunset-wallpaper.jpg);
+    backdrop-filter: blur(40px) brightness(40%);
+    background-position: center top;
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: -100px;
+}
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1  {
+    padding-top: 40px;
+    color: rgb(214, 208, 255);
+}
+
+.block-header {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: rgb(219, 215, 255);
+}
+
+.labs, .projects {
+    background-color: var(--sectionbg);
+    margin-top: 30px;
+    margin-bottom: 60px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.labs-block, .projects-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    background-color: rgba(216, 200, 243, 0.349);
+    border-radius: 15px;
+}
+
+.section-h2, .section-h3, .section-p {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.section-h2 {
+    font-size: 22px;
+    color: rgb(41, 35, 99);
+}
+
+.section-h3 {
+    font-size: 19px;
+    color: rgb(27, 23, 75);
+}
+
+.section-p {
+    font-size: 16px;
+    color: rgb(27, 23, 75);
+}
+
+.section-images {
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.section-links {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 35%;
+    min-width: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section-links a {
+    width: 12%;
+    min-width: 30px;
+    max-width: 45px;
+}
+
+.section-links img {
+    width: 100%;
+    height: auto;
+    filter: brightness(60%);
+}
+
+.section-links img:hover {
+    filter: brightness(170%);
 }
 
 h1 {
@@ -22,14 +135,3 @@ h1 {
     font-size: 3rem;
 }
 
-.labs {
-    background-color: var(--sectionbg);
-    padding: 2%;
-    margin: 2%;
-}
-
-.projects {
-    background-color: var(--sectionbg);
-    padding: 2%;
-    margin: 2%;
-}
